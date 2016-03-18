@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>
+			Funcion Constructor con Patrametros
+		</title>
+		<!-- SE OPTO PRIMERO POR HACER EL CURSO DE JESUS CONDE PROQUE ES MAS BASICO - DE AHI PASO AL CURSO DE JQUERY TAMBIEN DE JESUS CONDE Y DE AHI SI EL CURSO DE JQUERY DE PLATZI. PARA NO PERDER EL IMPULSO CON PLATZI EMPEZAR AHI EL CURSO DE PROGARAMCION BASICA-->
+
+		<!--VAMOS PARA VIDEO 27 DE JESUS CONDE-->
+		
+		<script type="text/javascript">
+			function Coche(color, marca, kilometros){
+				this.color = color;
+				this.marca= marca;
+				this.kilometros= kilometros;
+				this.info = 'Este coche es de la marca' + this.marca + '. Es de color ' + this.color + ' y tiene' + this.kilometros + ' kilometros';
+				this.mostrarInfo = function(){
+					alert(this.info)
+				}
+			}
+
+			var coche1 = new Coche('Blanco', 'Renault', '32.000');
+			var coche2 = new Coche('Rojo', 'Toyota', '12.000');
+
+
+		</script>
+		<style>
+			p {font:14px normal arial, verdana, helvetica;}
+		</style>
+	</head>
+	<body>
+		<div id="app-container">
+			<header id="app-header">
+				
+			</header>
+			<section id="app-body">
+			<input type="button" value="mostrar info renault" onclick="coche1.mostrarInfo()">
+			<input type="button" value="mostrar info toyota" onclick="coche2.mostrarInfo()">
+				
+			</section>
+			<footer id="app-footer">
+				
+			</footer>
+		</div>
+
+
+	
+		
+	</body>
+</html>
